@@ -1,0 +1,35 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:assignment
+    username: sa
+    hikari:
+      minimum-idle: 600000
+      connection-timeout: 20000
+      maximum-pool-size: 10
+      pool-name: MyConnectionPool
+      maxLifetime: 1800000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          time_zone: UTC
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+security:
+  jwt:
+    secret: secret
+    expiration-date: 86400000
+    token-prefix: Bearer
+    header-value: Authorization
+    issuer: localhost

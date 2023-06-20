@@ -1,0 +1,12 @@
+<div class="row create-projects">
+  <div class="col-md-12 col-md-offset-3">
+    <form [formGroup]="accountCreationForm" id="msform">
+      <fieldset>
+        <h2 class="fs-title">Create an account for existing customer</h2>
+        <input type="number" formControlName="initialCredit"  placeholder="initialCredit"/>
+        <button type="button" (click)="onHome()" class="btn btn-link float-left" >Home</button>
+        <button type="button" (click)="create()" class="btn btn-link float-left" >Create</button>
+       </fieldset>
+     </form>
+   </div>
+ </div>

@@ -1,0 +1,30 @@
+<div class="row detail-account">
+  <div class="col-md-12 col-md-offset-3">
+    <form>
+      <fieldset>
+        <h2 class="fs-title">Account balance</h2>
+        <h3>{{user?.account?.balance|currency:'EUR':true}}</h3>
+        <button type="button" (click)="onHome()" class="btn btn-link float-left" >Home</button>
+      </fieldset>
+      <fieldset>
+        <h2 class="fs-title">Account Transactions</h2>
+        <table class="table table-striped">
+          <thead class="thead-dark">
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Account ID</th>
+            <th scope="col">Created At</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let transaction of user?.account?.transactions">
+            <th>{{transaction.identifier}}</th>
+            <th>{{transaction.accountId}}</th>
+            <td>{{transaction.createdAt | date:'yyyy-MM-ddTHH:mm:ss.SSS':'+0:00'}}Z</td>
+          </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+  </div>
+</div>

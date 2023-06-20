@@ -1,0 +1,15 @@
+openAPI:
+  info:
+    version: '2023-06'
+    title: 'Blue Harvest'
+    description: 'Blue Harvest Back-end coding assignment'
+    termsOfService: https://blueharvest.io/careers/
+    contact:
+      email: no-reply@blueharvest.io
+      name: Blue Harvest
+    licence:
+      name: API TERMS OF SERVICE
+      url: https://www.apache.org/licenses/LICENSE-2.0
+  servers:
+    - description: "Blue Harvest"
+      url: "https://blueharvest.io/careers/"
