@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "14.x"
           cache: "npm"
-          cache-dependency-path: "package-lock.json"
+          cache-dependency-path: "portal/package-lock.json"
       - name: Lint project
         run: npm run lint
         working-directory: ./portal
