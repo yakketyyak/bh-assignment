@@ -16,7 +16,13 @@ jobs:
         with:
           node-version: "14.x"
           cache: "npm"
-          cache-dependency-path: "portal/package-lock.json"
+          cache-dependency-path: "package-lock.json"
+      - name: Install deps
+        run: npm i
+        working-directory: ./portal
+      - name: Lint project
+        run: npm run lint
+        working-directory: ./portal
       - name: Build app
         run: npm run build:prod
         working-directory: ./portal
