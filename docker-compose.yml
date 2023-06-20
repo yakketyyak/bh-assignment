@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+
+  backend:
+    restart: on-failure
+    image: backend
+    build: ./technical-assignment
+    hostname: backend
+    ports:
+      - '8080:8080'
+
+  portal:
+    restart: on-failure
+    depends_on:
+      - backend
+    image: portal
+    build: ./portal
+    container_name: portal
+    hostname: portal
+    ports:
+      - '80:80'
