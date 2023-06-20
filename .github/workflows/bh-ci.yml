@@ -28,6 +28,7 @@ jobs:
   build_api:
     name: Build API
     runs-on: ubuntu-latest
+    needs: [build_portal]
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 17
