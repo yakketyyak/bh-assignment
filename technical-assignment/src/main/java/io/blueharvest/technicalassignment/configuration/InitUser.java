@@ -24,7 +24,7 @@ public class InitUser implements CommandLineRunner {
     private final PasswordEncoder passwordEncoder;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         try {
             for (int i = 0; i < 10; i++) {
                 this.userRepository.save(

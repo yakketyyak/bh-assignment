@@ -26,6 +26,7 @@ spring:
       enabled: true
       settings:
         web-allow-others: true
+
 security:
   jwt:
     secret: secret
@@ -33,3 +34,13 @@ security:
     token-prefix: Bearer
     header-value: Authorization
     issuer: localhost
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: swagger-ui.html
+    disable-swagger-default-url: true
+    display-request-duration: true
+  'packages-to-scan[0]': io.blueharvest.technicalassignment

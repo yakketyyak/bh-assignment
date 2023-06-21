@@ -4,7 +4,7 @@ import io.blueharvest.technicalassignment.domain.user.dto.UserDto;
 import io.blueharvest.technicalassignment.domain.user.dto.UserLiteDto;
 import io.blueharvest.technicalassignment.domain.user.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springdoc.api.annotations.ParameterObject;
+import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
