@@ -65,4 +65,46 @@ Launch this url in your browser:
 http://localhost/login
 
 User: admin/admin
+
+NB: click many times if the first click does not show something
+```
+
+API documentation:
+
+```
+http://localhost:8080/swagger-ui/index.html#/
+```
+
+How to generate token to test API ?
+
+- *generate token*
+
+```
+curl 'http://localhost:8080/auth/login' \
+--header 'Content-Type: application/json' \
+--data '{
+	"username":"admin",
+	"password":"admin"
+}'
+
+
+{
+    "access_token": "eyJhbGci...",
+    "expired_at": 1687456636148,
+    "token_type": "Bearer"
+}
+```
+
+- *add access token to requests*
+
+Click on Authorize key and add access token ton input file
+
+== Ho to stop
+
+Run this command to stop project
+
+```
+cd blue-harvest/
+
+docker-compose down
 ```
