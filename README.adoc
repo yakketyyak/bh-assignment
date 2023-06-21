@@ -6,7 +6,7 @@
 toc::[]
 
 == Overview
-This project is an assignment to verify knowledge about enterprise application
+This project is an assignment to verify knowledge about enterprise application.
 
 The chosen architecture is n tier architecture.
 
@@ -25,7 +25,7 @@ docker
 ```
 
 - Build the portal project base on ES5 and Angular 9
-- Build the API project base on Java 17 and Spring Boot
+- Build the API project base on Java 17 and Spring Boot 3.1.0
 
 Create deployment units
 
@@ -49,11 +49,13 @@ mvn clean install
 
 ```
 cd blue-harvest/
+
 docker-compose build
+
 docker-compose up -d
 ```
 
-- *verify that evrything works*
+- *verify that everything works*
 
 Launch this url in your browser:
 
