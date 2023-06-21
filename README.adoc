@@ -34,6 +34,8 @@ Create deployment units
 ```
 cd portal/
 
+npm i --force
+
 npm run build:prod
 ```
 
