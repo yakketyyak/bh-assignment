@@ -16,12 +16,11 @@ image::assignment.png[]
 
 Prerequisites:
 
-```
-maven 3.8.x
-java 17
-npm
-docker-compose
-docker
+- maven 3.8.x https://maven.apache.org/install.html[how to install]
+- java 17 https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/what-is-corretto-17.html[how to install]
+- npm and node https://docs.npmjs.com/downloading-and-installing-node-js-and-npm[how to install]
+- docker-compose https://doc.ubuntu-fr.org/docker-compose[example of Linux]
+- docker https://docs.docker.com/compose/install/[how to install]
 ```
 
 - Build the portal project base on ES5 and Angular 9
